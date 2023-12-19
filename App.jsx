@@ -22,7 +22,7 @@ import Champ from './components/Champ/Champ';
 
 
 function App() {
-
+const[list,setList]= React.useState([])
 
   return (
     <SafeAreaView >
@@ -34,6 +34,7 @@ function App() {
      <Champ></Champ>
      <Button title='Ajouter un texte'></Button>
     </View>
+    <Result></Result>
       </ScrollView>
     </SafeAreaView>
   );
